@@ -6,7 +6,7 @@ import org.gradle.api.Project
 class DemoPlugin implements Plugin<Project> {
     void apply(Project project) {
 
-        project.extensions.add("demoplugin", DemoPluginExtension)
+        project.extensions.add("demo-plugin", DemoPluginExtension)
 
         // The quick-n-dirty way
         project.task("dealwithit") {
@@ -28,7 +28,7 @@ class DemoPlugin implements Plugin<Project> {
         }
 
         project.afterEvaluate {
-            println(project.extensions.demoplugin.fileContent)
+            println(project.extensions.demo-plugin.fileContent)
         }*/
     }
 }

@@ -1,5 +1,5 @@
 package com.sample
 
-class MyPluginExtension {
+class DemoPluginExtension {
     String fileContent = "¯\\_(ツ)_/¯"
 }
